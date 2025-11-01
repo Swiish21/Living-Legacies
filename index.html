@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Legacies - Celebrating Kenya's Cultural Diversity</title>
+    <link rel="icon" type="image/x-icon" href="assets/lion.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,8 +12,7 @@
     <nav>
         <div class="nav-container">
             <a href="#" class="logo" onclick="showPage('home')">
-                <div class="logo-icon">🦁</div>
-                Living Legacies
+                <img src="assets/lionpng.png" alt="Living Legacies Logo" class="logo-icon">
             </a>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
             <ul class="nav-links" id="navLinks">
@@ -147,13 +147,175 @@
 
     <!-- About Page -->
     <div id="aboutPage" class="page-content">
-        <section class="about-section">
-            <div class="about-content">
-                <h2>About Living Legacies</h2>
-                <p>Living Legacies is a digital platform dedicated to preserving, celebrating, and sharing the rich cultural heritage of Kenya's diverse communities. We believe that understanding and appreciating our cultural diversity is essential for national unity and progress.</p>
-                <p>Our mission is to create an accessible repository of knowledge about Kenya's ethnic communities, their histories, traditions, and contributions to the nation. Through this platform, we aim to educate, inspire, and connect Kenyans and global audiences with the living cultures that make Kenya unique.</p>
-                <p>Each community page features comprehensive information about their history, cultural practices, language, and impact on Kenya's development. Our integrated mini-shops allow you to support these communities directly by purchasing authentic cultural products and crafts.</p>
-                <p>Join us in celebrating Kenya's cultural tapestry and ensuring these living legacies continue to thrive for generations to come.</p>
+        <!-- About Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h1>About Living Legacies</h1>
+                <p class="about-hero-subtitle">Preserving Kenya's Cultural Heritage for Future Generations</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Ethnic Communities</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label">People Represented</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Years of Heritage</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-hero-overlay"></div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="about-mission">
+            <div class="about-container">
+                <div class="mission-vision-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon">🎯</div>
+                        <h3>Our Mission</h3>
+                        <p>To preserve, celebrate, and share the rich cultural heritage of Kenya's diverse communities through an accessible digital platform that educates, inspires, and connects people with the living cultures that make Kenya unique.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon">🌟</div>
+                        <h3>Our Vision</h3>
+                        <p>A world where Kenya's cultural diversity is celebrated, understood, and preserved for future generations, fostering national unity while honoring the unique traditions of each community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="about-story">
+            <div class="about-container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2>Our Story</h2>
+                        <p class="story-intro">Born from a passion to preserve Kenya's rich cultural tapestry, Living Legacies emerged as a digital sanctuary where tradition meets technology.</p>
+                        
+                        <div class="story-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2020</div>
+                                <div class="timeline-content">
+                                    <h4>The Beginning</h4>
+                                    <p>Our founder, inspired by conversations with elders from various communities, recognized the urgent need to document and preserve Kenya's cultural heritage before it's lost to time.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2021</div>
+                                <div class="timeline-content">
+                                    <h4>Community Connection</h4>
+                                    <p>We began collaborating with community leaders, cultural experts, and artisans to gather authentic stories, traditions, and knowledge from each ethnic group.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2022</div>
+                                <div class="timeline-content">
+                                    <h4>Digital Platform Launch</h4>
+                                    <p>Living Legacies came to life as a comprehensive digital platform, featuring detailed community profiles, cultural practices, and integrated artisan marketplaces.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Growing Impact</h4>
+                                    <p>Today, we've reached millions of people globally, creating bridges between cultures and supporting artisan communities across Kenya through our marketplace integration.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-image">
+                        <img src="assets/kalenjin.jpg" alt="Kenyan Cultural Heritage">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="about-values">
+            <div class="about-container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3>Respect</h3>
+                        <p>We honor and respect each community's traditions, customs, and wisdom, ensuring authentic representation without appropriation.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">📚</div>
+                        <h3>Education</h3>
+                        <p>We believe in the power of knowledge to build bridges and foster understanding between different communities and cultures.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌍</div>
+                        <h3>Unity</h3>
+                        <p>We celebrate diversity while building national unity, showing that differences strengthen rather than divide us.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">⚡</div>
+                        <h3>Authenticity</h3>
+                        <p>We are committed to presenting genuine, well-researched content that accurately represents each community's heritage.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h3>Innovation</h3>
+                        <p>We use modern technology to preserve ancient wisdom, creating new ways for people to connect with cultural heritage.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">❤️</div>
+                        <h3>Love</h3>
+                        <p>Every feature, story, and interaction is driven by love for Kenya's people and their incredible cultural richness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="about-impact">
+            <div class="about-container">
+                <h2 class="section-title">Our Impact</h2>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-number">500K+</div>
+                        <div class="impact-label">Monthly Visitors</div>
+                        <div class="impact-description">People discovering and learning about Kenya's cultural diversity</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-number">25K+</div>
+                        <div class="impact-label">Artisan Sales</div>
+                        <div class="impact-description">Cultural products sold supporting local communities</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-number">100+</div>
+                        <div class="impact-label">Cultural Stories</div>
+                        <div class="impact-description">Detailed narratives preserving traditions for future generations</div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-number">50+</div>
+                        <div class="impact-label">Partner Communities</div>
+                        <div class="impact-description">Active collaborations with cultural organizations and leaders</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="about-cta">
+            <div class="about-container">
+                <div class="cta-content">
+                    <h2>Join Our Cultural Journey</h2>
+                    <p>Be part of preserving Kenya's heritage while supporting artisan communities. Every story you read and product you purchase contributes to keeping these traditions alive.</p>
+                    <div class="cta-buttons">
+                        <button onclick="showPage('home')" class="cta-button primary">Explore Communities</button>
+                        <button onclick="showPage('contact')" class="cta-button secondary">Get In Touch</button>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

@@ -1,3 +1,17 @@
+// Community image mapping
+const communityImages = {
+    kikuyu: 'assets/kikuyu.jpg',
+    luo: 'assets/luo-traditional.jpg',
+    luhya: 'assets/luhya.jpg',
+    kalenjin: 'assets/kalenjin.jpg',
+    kamba: 'assets/kamba.jpg',
+    kisii: 'assets/kisii.jpg',
+    mijikenda: 'assets/miji.jpg',
+    maasai: 'assets/maasai2.jpg',
+    turkana: 'assets/turkana.jpg',
+    samburu: 'assets/samburu.jpg'
+};
+
 // Enhanced community data with story-like narratives
 const communities = {
     kikuyu: {
@@ -5,6 +19,7 @@ const communities = {
         emoji: '🏔️',
         region: 'Central Kenya',
         population: 'Approximately 8.1 million (22% of Kenya\'s population)',
+        image: communityImages.kikuyu,
         history: 'Long ago, when the mountain called Kirinyaga stood majestically against the African sky, the Kikuyu people made a sacred covenant with this towering giant. Legend tells us that Gikuyu, their founding father, received this land as a divine gift from Ngai, the Creator himself. For over four centuries, they have tended the fertile slopes of Mount Kenya, their lives intertwined with the rhythms of the land and the wisdom of their ancestors. From the sacred Mugumo trees to the bustling markets of modern Nairobi, the Kikuyu story is one of resilience, innovation, and an unbreakable bond with their mountain home.',
         impact: 'The Kikuyu have been the architects of modern Kenya\'s story. From the hallowed halls of Uhuru Park where independence was declared, to the boardrooms of multinational corporations, their entrepreneurial spirit has shaped the nation\'s economic landscape. They have given Kenya its first and fourth presidents, its literary giants, and countless innovators who have carried the Kenyan dream beyond the borders of their ancestral lands. Their belief in education and hard work has created a legacy that continues to inspire generations.',
         practices: [
@@ -26,6 +41,7 @@ const communities = {
         emoji: '🌊',
         region: 'Nyanza (Western Kenya)',
         population: 'Approximately 5.1 million (14% of Kenya\'s population)',
+        image: communityImages.luo,
         history: 'Picture the gentle waves of Lake Victoria lapping against golden shores, and you\'ll begin to understand the Luo soul. These descendants of the great Nilotic migrations arrived on Kenya\'s shores like a gentle tide, bringing with them the songs of Sudan and the rhythms of ancient waters. Their canoes have cut through these waters for centuries, carrying not just fish, but stories, wisdom, and the soulful music that has become Kenya\'s heartbeat. The Luo believe that water is life, and their lives have flowed like rivers through Kenya\'s history, nourishing the land with their intellectual prowess and artistic genius.',
         impact: 'The Luo have been Kenya\'s intellectual lighthouse, illuminating the nation\'s path through education, politics, and the arts. From the golden voice of Benga music that echoes across the continent to the wise counsel of leaders like Jaramogi Oginga Odinga, they have shaped Kenya\'s soul. Their lakeside wisdom, combined with an unwavering commitment to education, has produced generations of doctors, lawyers, teachers, and artists who continue to push the boundaries of excellence.',
         practices: [
@@ -47,6 +63,7 @@ const communities = {
         emoji: '🌾',
         region: 'Western Kenya',
         population: 'Approximately 6.8 million (16% of Kenya\'s population)',
+        image: communityImages.luhya,
         history: 'In the rolling highlands of Western Kenya, where golden maize fields stretch to meet the horizon, the Luhya people have written their epic. Seventeen tribes united by blood and destiny, they came like a great river flowing from the Congo, bringing with them the gift of cultivation and the art of community. They are the masters of the soil, turning Kenya\'s western breadbasket into a canvas of abundance. Their villages, with their distinctive circular huts, have stood as beacons of agricultural excellence, feeding not just their families but the entire nation with their harvest of hope.',
         impact: 'The Luhya have been Kenya\'s agricultural architects and business pioneers. Their sophisticated farming techniques have made Western Kenya the country\'s breadbasket, while their entrepreneurial spirit has built business empires that span industries. They have given Kenya brilliant politicians, successful farmers, and innovative leaders who understand that prosperity comes from the marriage of hard work and wisdom. Their commitment to education and community development continues to shape Kenya\'s future.',
         practices: [
@@ -68,6 +85,7 @@ const communities = {
         emoji: '🏃',
         region: 'Rift Valley',
         population: 'Approximately 5.9 million (14% of Kenya\'s population)',
+        image: communityImages.kalenjin,
         history: 'High in the cool highlands of the Rift Valley, where eagles soar above misty peaks, the Kalenjin people discovered their extraordinary gift. Legends speak of their ancestors being blessed by the mountain spirits, granting them the ability to run like the wind itself. Their traditional pastoral lifestyle, moving cattle across vast highland pastures, forged legs of steel and hearts of determination. Today, they are the world\'s running royalty, their names echoing through Olympic stadiums and marathon records across the globe. But beneath their athletic fame lies a rich culture of age-sets, cattle ceremonies, and traditions that have shaped them into champions both on and off the track.',
         impact: 'The Kalenjin have put Kenya on the world map through their extraordinary athletic achievements. Their runners have brought home Olympic gold, set world records, and inspired millions to believe in the power of human potential. Beyond sports, they are respected for their strong family values, their commitment to education, and their ability to balance traditional culture with modern achievement. Their legacy extends far beyond running tracks to become symbols of excellence and perseverance.',
         practices: [
@@ -89,6 +107,7 @@ const communities = {
         emoji: '🎨',
         region: 'Eastern Kenya',
         population: 'Approximately 4.5 million (11% of Kenya\'s population)',
+        image: communityImages.kamba,
         history: 'In the sun-baked plains of Eastern Kenya, where acacia trees stretch their branches toward endless skies, the Kamba people have transformed the art of survival into the art of beauty. They are the master sculptors and traders of Kenya, their hands breathing life into ordinary wood and their caravans carrying not just goods but stories across East Africa. Their trading networks, established centuries ago, became the veins that connected communities, while their artistic vision turned everyday objects into treasures. The Kamba understand that true wealth lies not just in what you own, but in what you can create with your own hands.',
         impact: 'The Kamba have been Kenya\'s artistic ambassadors and entrepreneurial pioneers. Their wood carvings and sculptures have become synonymous with African art worldwide, while their trading spirit has built business networks that span the continent. They have maintained a perfect balance between preserving ancient crafts and embracing modern opportunities, proving that tradition and progress can dance together in harmony.',
         practices: [
@@ -110,6 +129,7 @@ const communities = {
         emoji: '🗿',
         region: 'Nyanza (Southern)',
         population: 'Approximately 2.7 million (6% of Kenya\'s population)',
+        image: communityImages.kisii,
         history: 'On the steep, misty slopes of Mount Nyamgiri, where tea plantations cascade down mountainsides like green waterfalls, the Kisii people have carved their masterpiece from stone itself. They arrived from the highlands of Rwanda and Burundi, bringing with them the ancient art of soapstone carving and the wisdom of terraced farming. With hammers and chisels, they transform rough stone into smooth sculptures that capture the soul of their people. Their hands have created not just art, but a legacy that has traveled to galleries and homes across the world, carrying with it the spirit of the highlands.',
         impact: 'The Kisii have put Kenya on the international art map through their world-renowned soapstone carvings. Their terraced farms have made the highlands a green paradise, producing the tea and coffee that Kenya exports to the world. They are master cultivators who have turned challenging mountain terrain into productive farmland, proving that determination and ingenuity can overcome any obstacle.',
         practices: [
@@ -131,6 +151,7 @@ const communities = {
         emoji: '🌴',
         region: 'Coastal Kenya',
         population: 'Approximately 1.8 million (4% of Kenya\'s population)',
+        image: communityImages.mijikenda,
         history: 'Where the Indian Ocean kisses Kenya\'s golden shores, and coconut palms sway to the rhythm of ocean breezes, the nine tribes of the Mijikenda have created a unique coastal civilization. They are the guardians of the sacred Kaya forests, ancient sanctuaries where spirits dwell among towering trees that have witnessed centuries of history. Their traditional dhows, with their distinctive lateen sails, have carried spices, stories, and cultures across the vast Indian Ocean. In their Swahili stone houses and coral mosques, they have blended African traditions with Arab influences, creating a coastal culture as rich and diverse as the ocean itself.',
         impact: 'The Mijikenda communities are the keepers of Kenya\'s coastal heritage and maritime traditions. Their management of sacred Kaya forests has preserved biodiversity for centuries, while their sailing skills and boat-building expertise have maintained the connection between land and sea. They have preserved a unique Swahili culture that represents the meeting point of Africa, Arabia, and the wider Indian Ocean world.',
         practices: [
@@ -152,6 +173,7 @@ const communities = {
         emoji: '🦒',
         region: 'Southern Kenya/Northern Tanzania',
         population: 'Approximately 1.1 million (3% of Kenya\'s population)',
+        image: communityImages.maasai,
         history: 'Under the endless African sky, where acacia trees dot the golden savannah and herds of wildlife roam free, the Maasai people have preserved a way of life that seems as old as the land itself. They are the poets of the African plains, their red shukas bright against the landscape, their jumping dances reaching toward the heavens. Their relationship with cattle goes beyond economics to the spiritual – every animal is a blessing, every birth a celebration. The Moran warriors, with their fierce courage and elaborate hairstyles, have become symbols of African nobility and the untamed spirit of the continent.',
         impact: 'The Maasai have become international symbols of African culture while maintaining their traditional lifestyle. Their distinctive customs, colorful beadwork, and warrior traditions have become integral to Kenya\'s tourism identity. They have shown the world that ancient wisdom and modern development can coexist, inspiring global appreciation for indigenous knowledge and sustainable pastoralism.',
         practices: [
@@ -173,6 +195,7 @@ const communities = {
         emoji: '🏜️',
         region: 'Northern Kenya',
         population: 'Approximately 1.0 million (2% of Kenya\'s population)',
+        image: communityImages.turkana,
         history: 'In the harsh, arid lands of northern Kenya, where temperatures soar and rainfall is precious as gold, the Turkana people have written one of humanity\'s greatest survival stories. They are the masters of adaptation, turning one of Kenya\'s most challenging environments into a home. Their traditional knowledge of water harvesting, livestock management, and survival in the desert has made them legends among pastoralists. They have shown the world that with wisdom, resilience, and community cooperation, humans can not just survive but thrive in the harshest conditions.',
         impact: 'The Turkana communities have demonstrated remarkable resilience and innovation in the face of extreme environmental challenges. Their traditional water harvesting techniques and climate adaptation strategies have become models for sustainable living in arid regions. They have preserved ancient knowledge while adapting to modern challenges, showing remarkable strength in the face of adversity.',
         practices: [
@@ -194,6 +217,7 @@ const communities = {
         emoji: '🐘',
         region: 'Northern Kenya',
         population: 'Approximately 350,000 (1% of Kenya\'s population)',
+        image: communityImages.samburu,
         history: 'In the rugged highlands of northern Kenya, where Mount Ololokwi rises like a sacred sentinel, the Samburu people have crafted a culture as distinctive as the landscape they call home. Cousins to the Maasai but with their own unique identity, they have adapted pastoralism to the challenges of the northern highlands and semi-arid plains. Their deep connection with camels, their elaborate age-set systems, and their warrior traditions have created a society that balances ancient customs with the realities of modern Kenya. They are the custodians of northern Kenya\'s cultural heritage.',
         impact: 'Samburu culture preserves unique traditions of northern Kenya\'s pastoralist communities while contributing to the region\'s cultural diversity and tourism appeal. Their specialized knowledge of camel pastoralism, their colorful beadwork, and their warrior traditions have become integral to understanding Kenya\'s ethnic mosaic.',
         practices: [
@@ -242,12 +266,18 @@ function showCommunity(communityKey) {
     
     const communityHTML = `
         <div id="community-${communityKey}" class="page-content">
-            <div class="community-detail">
-                <div class="community-header">
+            <!-- Community Hero Section -->
+            <section class="community-hero" style="background-image: url('${community.image}')">
+                <div class="community-hero-content">
                     <h1>${community.emoji} ${community.name}</h1>
-                    <p>${community.region} • ${community.population}</p>
+                    <p class="community-hero-subtitle">${community.region} • ${community.population}</p>
+                    <button onclick="showPage('home')" class="hero-back-btn">← Back to Communities</button>
                 </div>
-                
+                <div class="community-hero-overlay"></div>
+            </section>
+            
+            <!-- Community Content -->
+            <div class="community-detail-clean">
                 <div class="detail-section story-section">
                     <h2>Our Story</h2>
                     <p>${community.history}</p>
@@ -283,10 +313,6 @@ function showCommunity(communityKey) {
                             </div>
                         `).join('')}
                     </div>
-                </div>
-                
-                <div style="text-align: center; margin: 3rem 0;">
-                    <button onclick="showPage('home')" class="cta-button">← Back to Home</button>
                 </div>
             </div>
         </div>
