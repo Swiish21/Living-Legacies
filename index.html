@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Legacies - Celebrating Kenya's Cultural Diversity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <div class="logo-icon">🦁</div>
+                Living Legacies
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li class="communities-dropdown" id="communitiesDropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Communities ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showCommunity('kikuyu')">Kikuyu</a>
+                        <a href="#" onclick="showCommunity('luo')">Luo</a>
+                        <a href="#" onclick="showCommunity('luhya')">Luhya</a>
+                        <a href="#" onclick="showCommunity('kalenjin')">Kalenjin</a>
+                        <a href="#" onclick="showCommunity('kamba')">Kamba</a>
+                        <a href="#" onclick="showCommunity('kisii')">Kisii</a>
+                        <a href="#" onclick="showCommunity('mijikenda')">Mijikenda</a>
+                        <a href="#" onclick="showCommunity('maasai')">Maasai</a>
+                        <a href="#" onclick="showCommunity('turkana')">Turkana</a>
+                        <a href="#" onclick="showCommunity('samburu')">Samburu</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="homePage" class="page-content active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Living Legacies</h1>
+                <p>Celebrating Kenya's Rich Cultural Tapestry</p>
+                <a href="#communities" class="cta-button">Explore Communities</a>
+            </div>
+        </section>
+
+        <section class="communities-section" id="communities">
+            <h2 class="section-title">Discover Our Communities</h2>
+            <p class="section-subtitle">Journey through Kenya's diverse cultural heritage</p>
+            <div class="communities-grid">
+                <div class="community-card" onclick="showCommunity('kikuyu')">
+                    <div class="community-image"><img src="/assets/kikuyu" alt="" srcset=""></div>
+                    <div class="community-content">
+                        <h3 class="community-name">Kikuyu</h3>
+                        <p class="community-brief">Kenya's largest ethnic group, known for their entrepreneurial spirit and agricultural expertise.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('luo')">
+                    <div class="community-image">🌊</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Luo</h3>
+                        <p class="community-brief">Vibrant lakeside community with rich oral traditions and musical heritage.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('luhya')">
+                    <div class="community-image">🌾</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Luhya</h3>
+                        <p class="community-brief">Western Kenya's agricultural powerhouse with diverse sub-groups and traditions.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('kalenjin')">
+                    <div class="community-image">🏃</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Kalenjin</h3>
+                        <p class="community-brief">World-renowned long-distance runners from the Rift Valley highlands.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('kamba')">
+                    <div class="community-image">🎨</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Kamba</h3>
+                        <p class="community-brief">Master artisans and traders known for intricate wood carvings and crafts.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('kisii')">
+                    <div class="community-image">🗿</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Kisii</h3>
+                        <p class="community-brief">Famous for beautiful soapstone carvings and lush highland agriculture.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('mijikenda')">
+                    <div class="community-image">🌴</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Mijikenda</h3>
+                        <p class="community-brief">Coastal people with nine related ethnic groups and sacred Kaya forests.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('maasai')">
+                    <div class="community-image">🦒</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Maasai</h3>
+                        <p class="community-brief">Iconic pastoralists known for distinctive dress, customs, and warrior culture.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('turkana')">
+                    <div class="community-image">🏜️</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Turkana</h3>
+                        <p class="community-brief">Resilient pastoralists from Kenya's northern arid and semi-arid lands.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="community-card" onclick="showCommunity('samburu')">
+                    <div class="community-image">🐘</div>
+                    <div class="community-content">
+                        <h3 class="community-name">Samburu</h3>
+                        <p class="community-brief">Northern nomadic people closely related to the Maasai with unique traditions.</p>
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="aboutPage" class="page-content">
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Living Legacies</h2>
+                <p>Living Legacies is a digital platform dedicated to preserving, celebrating, and sharing the rich cultural heritage of Kenya's diverse communities. We believe that understanding and appreciating our cultural diversity is essential for national unity and progress.</p>
+                <p>Our mission is to create an accessible repository of knowledge about Kenya's ethnic communities, their histories, traditions, and contributions to the nation. Through this platform, we aim to educate, inspire, and connect Kenyans and global audiences with the living cultures that make Kenya unique.</p>
+                <p>Each community page features comprehensive information about their history, cultural practices, language, and impact on Kenya's development. Our integrated mini-shops allow you to support these communities directly by purchasing authentic cultural products and crafts.</p>
+                <p>Join us in celebrating Kenya's cultural tapestry and ensuring these living legacies continue to thrive for generations to come.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contactPage" class="page-content">
+        <section class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            <div class="contact-form">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Community Detail Pages (Template) -->
+    <div id="communityPages"></div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Living Legacies</h3>
+            <p>Preserving Kenya's Cultural Heritage</p>
+            <div class="social-links">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+                <a href="#">📺</a>
+            </div>
+            <p>&copy; 2024 Living Legacies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
